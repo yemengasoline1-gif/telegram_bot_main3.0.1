@@ -1,0 +1,19 @@
+# متطلبات أساسية
+pyTelegramBotAPI==4.14.1
+requests==2.31.0
+pillow==10.1.0
+
+# لـ Gemini AI (اختياري)
+google-generativeai==0.3.2
+
+# لـ OCR (اختياري)
+easyocr==1.7.1
+opencv-python-headless==4.8.1.78
+numpy==1.24.3
+
+# لـ Flask (اختياري للمنصات التي تدعم Webhook)
+flask==2.3.3
+gunicorn==21.2.0
+
+# إضافات
+python-dotenv==1.0.0
