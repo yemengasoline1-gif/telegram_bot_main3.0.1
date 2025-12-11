@@ -1,0 +1,30 @@
+{
+  "$schema": "https://railway.app/railway.schema.json",
+  "build": {
+    "builder": "NIXPACKS",
+    "buildCommand": "pip install -r requirements.txt"
+  },
+  "deploy": {
+    "numReplicas": 1,
+    "restartPolicyType": "ON_FAILURE",
+    "restartPolicyMaxRetries": 10
+  },
+  "env": {
+    "TELEGRAM_TOKEN": {
+      "description": "8306427606:AAFxuu9WuABegJETDrIS65MinArciurmOvg",
+      "required": true
+    },
+    "GEMINI_API_KEY": {
+      "description": "AIzaSyCwPk_QJM5Swbyr9uhvuYvd8mDteNbvybg",
+      "required": false
+    },
+    "RAILWAY_ENVIRONMENT": {
+      "value": "production",
+      "description": "بيئة Railway"
+    },
+    "PORT": {
+      "value": "5000",
+      "description": "منفذ التطبيق"
+    }
+  }
+}
